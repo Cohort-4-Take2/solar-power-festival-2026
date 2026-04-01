@@ -17,5 +17,5 @@ let hasTicket= true;
 if (age >= 18 && hasTicket) {
     console.log ("Welcome to the Sun!")
 } else if (age <18 && hasTicket) {
-    cosole.log ("Access Denied")
+    console.log ("Access Denied")
 }
