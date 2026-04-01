@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Power NZ | Dev Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .accent-text { color: #facc15; } 
+    </script>
+</head>
+<body class="min-h-screen p-8 flex flex-col items-center">
+
+    <header class="text-center mb-12">
+        <h1 class="text-5xl font-bold accent-text mb-2">SOLAR POWER NZ</h1>
+        <p class="text-slate-400 tracking-widest uppercase">Auckland Summer Festival 2026</p>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
+        
+        <section class="glass p-6 rounded-2xl">
+            <h2 class="text-xl font-semibold mb-4 border-b border-slate-700 pb-2">Festival Status</h2>
+            <div id="stats-display" class="space-y-3">
+                <p>📍 <span class="text-slate-400">Venue:</span> Western Springs</p>
+                <p>🎟️ <span class="text-slate-400">Tickets:</span> 48,500 / 50,000</p>
+                <p>☀️ <span class="text-slate-400">Weather:</span> <span class="text-green-400">Sunny</span></p>
+            </div>
+        </section>
+
+        <section class="glass p-6 rounded-2xl border-l-4 border-yellow-500">
+            <h2 class="text-xl font-semibold mb-4">Dev Terminal</h2>
+            <p class="text-sm text-slate-300 mb-4">
+                Open your browser <strong>Console (F12)</strong> to test your functions. 
+                Use the global <code>festivalConfig</code> object in your logic.
+            </p>
+            <div class="bg-black/50 p-4 rounded-lg font-mono text-xs text-green-500">
+                // Try running these in console:<br>
+                > playSong("Solar Power", "Lorde");<br>
+                > checkEntry(19, true);<br>
+                > calculatePrice("VIP");
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-auto pt-12 text-slate-500 text-sm">
+        &copy; 2026 Solar Power NZ Festival Operations | Built by Code-tahitanga Students
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
