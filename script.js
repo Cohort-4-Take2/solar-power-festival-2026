@@ -10,3 +10,13 @@ const festivalConfig = {
 };
 
 // STUDENTS: ADD YOUR FUNCTIONS BELOW THIS LINE
+
+
+function upgradeStatus(name){
+    let status = "VIP"
+    return name + ": " + status;
+}
+
+let userName = "Kingston";
+
+console.log(upgradeStatus(userName));
