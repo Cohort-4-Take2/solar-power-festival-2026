@@ -36,32 +36,41 @@ if (ticketsSold >= capacity) {
 */
 
 
-function calculatePrice(tier){
+function calculatePrice(tier) {
     let price;
-    if (tier === "Standard"){
+    if (tier === "Standard") {
         price = 120;
-    } else if (tier === "VIP"){
+    } else if (tier === "VIP") {
         price = 250;
     } else {
         price = 500
-    } 
+    }
+}
+
+
+
+
+
+
+
+function checkCapacity(sold, limit) {
+    if (sold >= limit) {
+        return "Event Sold Out."
+    } else {
+        return "Tickets Available."
+    }
+}
+
+
+function checkEntry(age, hasTicket) {
+    if (age >= 18 && hasTicket) {
+        console.log("Welcome to the Sun!")
+    } else if (age < 18 && hasTicket) {
+        console.log("Access Denied")
+    }
 }
 
 
 calculatePrice("Standard");
 
 
-
-
-/*
-
-
-function checkCapacity(sold, limit)
-{
-if (sold >= limit){
-    return "Event Sold Out."
-} else {
-    return "Tickets Available."
-}
-}
-*/
