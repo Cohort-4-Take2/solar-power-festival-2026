@@ -46,6 +46,7 @@ function calculatePrice(tier) {
         price = 500
     }
 }
+calculatePrice("Standard");
 
 
 
