@@ -19,3 +19,16 @@ if (age >= 18 && hasTicket) {
 } else if (age <18 && hasTicket) {
     console.log ("Access Denied")
 }
+
+let standard= 120;
+let vip= 250;
+let backstage=500
+
+
+if ("backstage = 500"){
+    console.log(`Backstage ${backstage}`);
+} else if ("vip=250"){
+    console.log(`VIP ${vip}`);
+} else {
+    console.log(`Standard Tickets ${standard}`)
+}
