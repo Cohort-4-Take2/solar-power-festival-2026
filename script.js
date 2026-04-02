@@ -10,3 +10,11 @@ const festivalConfig = {
 };
 
 // STUDENTS: ADD YOUR FUNCTIONS BELOW THIS LINE
+
+function applyWeatherPolicy(isSunny){
+    if(!isSunny){
+        console.log(`Distributing Lorde-themed Photos`)
+    } else {
+        console.log(`Photos not distributed.`)
+    }
+}
