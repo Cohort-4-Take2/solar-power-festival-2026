@@ -23,4 +23,7 @@ function applyWeatherPolicy(isSunny){
     } else {
         console.log(`Photos not distributed.`)
     }
+function upgradeStatus(name){
+    let status = "VIP"
+    return name + ": " + status;
 }
