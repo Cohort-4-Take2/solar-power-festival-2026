@@ -48,3 +48,13 @@ function playSong(songTitle, songArtist){
 }
 
 console.log(playSong("Song name", "Song artist"));
+function applyWeatherPolicy(isSunny){
+    if(!isSunny){
+        console.log(`Distributing Lorde-themed Photos`)
+    } else {
+        console.log(`Photos not distributed.`)
+    }
+function upgradeStatus(name){
+    let status = "VIP"
+    return name + ": " + status;
+}
