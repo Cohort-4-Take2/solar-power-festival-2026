@@ -11,17 +11,8 @@ const festivalConfig = {
 
 // STUDENTS: ADD YOUR FUNCTIONS BELOW THIS LINE
 
-
-
-function checkEntry(age, hasTicket){
-if (age >= 18 && hasTicket) {
-    console.log ("Welcome to the Sun!")
-} else if (age <18 && hasTicket) {
-    console.log ("Access Denied")
-}
-}
-
 /*
+
 let standard= 120;
 let vip= 250;
 let backstage=500
@@ -42,8 +33,27 @@ if (ticketsSold >= capacity) {
     return capacity - ticketsSold
 }console.log ("Tickets still available!")
 
-
 */
+
+
+function calculatePrice(tier){
+    let price;
+    if (tier === "Standard"){
+        price = 120;
+    } else if (tier === "VIP"){
+        price = 250;
+    } else {
+        price = 500
+    } 
+}
+
+
+calculatePrice("Standard");
+
+
+
+
+/*
 
 
 function checkCapacity(sold, limit)
@@ -54,3 +64,4 @@ if (sold >= limit){
     return "Tickets Available."
 }
 }
+*/
