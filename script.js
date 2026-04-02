@@ -16,7 +16,3 @@ function upgradeStatus(name){
     let status = "VIP"
     return name + ": " + status;
 }
-
-let userName = "Kingston";
-
-console.log(upgradeStatus(userName));
