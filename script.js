@@ -11,15 +11,17 @@ const festivalConfig = {
 
 // STUDENTS: ADD YOUR FUNCTIONS BELOW THIS LINE
 
-let age= 18;
-let hasTicket= true;
 
+
+function checkEntry(age, hasTicket){
 if (age >= 18 && hasTicket) {
     console.log ("Welcome to the Sun!")
 } else if (age <18 && hasTicket) {
     console.log ("Access Denied")
 }
+}
 
+/*
 let standard= 120;
 let vip= 250;
 let backstage=500
@@ -31,4 +33,24 @@ if ("backstage = 500"){
     console.log(`VIP ${vip}`);
 } else {
     console.log(`Standard Tickets ${standard}`)
+}
+
+if (ticketsSold >= capacity) {
+    console.log ("Event Sold Out")
+} else 
+    function subtract(capacity, ticketsSold) {
+    return capacity - ticketsSold
+}console.log ("Tickets still available!")
+
+
+*/
+
+
+function checkCapacity(sold, limit)
+{
+if (sold >= limit){
+    return "Event Sold Out."
+} else {
+    return "Tickets Available."
+}
 }
