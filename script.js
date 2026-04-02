@@ -16,4 +16,4 @@ function playSong(songTitle, songArtist){
     return `Now playing ${songTitle} by ${songArtist} on the main stage`;
 }
 
-console.log(playSong("Song name", "Song artist"));
+console.log(playSong("Song name", "Song artist"))
